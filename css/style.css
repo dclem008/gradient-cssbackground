@@ -1,0 +1,65 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, #8210c2 ,#b5df44); /* Standard syntax */
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+input {
+    cursor: pointer;
+    padding: 3px;
+    outline: none;
+    margin-right: 4px;
+}
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+}
+
+.changeGradient {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    font: 900 1em 'Raleway', sans-serif;
+    letter-spacing: .14em;
+    border-radius: 3rem;
+    border-style: hidden;
+    outline: none;
+    color: #f3e9e9;
+    background-color: #d31bca ;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    filter: brightness(120%);
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.changeGradient:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.brightness, .contrast {
+    background: transparent;
+}
