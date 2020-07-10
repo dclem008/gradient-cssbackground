@@ -6,15 +6,16 @@
     </head>
     <body id="gradient">
         <h1>Background Generator</h1>
-        <input class="color1" type="color" name="color1" value="#8210c2">
-        <input class="color2" type="color" name="color2" value="#8210c2">
-        <input class="color3" type="color" name="color3" value="#b5df44">
-
+        <input class="color1 color-input" type="color" name="color1" value="#8210c2">
+        <input class="color2 color-input" type="color" name="color2" value="#8210c2">
+        <input class="color3 color-input" type="color" name="color3" value="#b5df44">
+		
         <h2>Current CSS Background</h2>
         <h3></h3>
-        <p>Brightness (1-15): <input class="brightness" type="text" name="brightness" value="10"></p>
-        <p>Contrast (1-10): <input class="contrast" type="text" name="contrast" value="10"></p>
-        <p><button class="changeGradient">Generate Random Background!</button></p>
+        <p class="darken-text">Brightness (1-15): <input class="brightness" type="range" name="brightness" min="1" max="15" value="10"></p>
+        <p class="darken-text">Contrast (1-10): <input class="contrast" type="range" name="contrast" min="1" max="10" value="10"></p>
+        <p></p>
+		<p><button class="changeGradient">Generate Random Background!</button></p>
         <script type="text/javascript" src="./js/script.js"></script>
     </body>
 </html>

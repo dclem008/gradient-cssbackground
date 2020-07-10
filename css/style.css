@@ -22,6 +22,21 @@ input {
     padding: 3px;
     outline: none;
     margin-right: 4px;
+	
+}
+
+.color-input {
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 2px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.color-input: hover {
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 h3 {
@@ -42,7 +57,7 @@ h3 {
     border-radius: 3rem;
     border-style: hidden;
     outline: none;
-    color: #f3e9e9;
+    color: rgba(200,200,200,.75);
     background-color: #d31bca ;
     cursor: pointer;
     transition: all 0.3s linear;
@@ -62,4 +77,8 @@ h3 {
 
 .brightness, .contrast {
     background: transparent;
+}
+
+.darken-text {
+    color: rgba(0,0,0,.95);
 }

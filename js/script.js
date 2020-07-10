@@ -8,11 +8,10 @@ let brightnessFilter = document.querySelector(".brightness");
 let contrastFilter = document.querySelector(".contrast");
 
 const changeBackground = () => {
-
     body.style.background = "linear-gradient(to right, " + color1.value  + " , " + color2.value + "," + color3.value + ")";
-
     gradBtn.style.background = "linear-gradient(to top, " + color2.value  + " , " + color1.value + "," +  color3.value + ")";
-    css.textContent = body.style.background + ";";
+    gradBtn.style.color = "" + ((color1.value - color2.value)).toString(16);
+	css.textContent = body.style.background + ";";
 }
 
 const getRandomColor = () => {
