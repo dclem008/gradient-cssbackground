@@ -1,6 +1,7 @@
 let css = document.querySelector("h3");
 let color1 = document.querySelector(".color1");
 let color2 = document.querySelector(".color2");
+let color3 = document.querySelector(".color3");
 let body = document.getElementById("gradient");
 let gradBtn = document.querySelector(".changeGradient");
 let brightnessFilter = document.querySelector(".brightness");
@@ -8,9 +9,9 @@ let contrastFilter = document.querySelector(".contrast");
 
 const changeBackground = () => {
 
-    body.style.background = "linear-gradient(to right, " + color1.value  + " , " + color2.value + ")";
+    body.style.background = "linear-gradient(to right, " + color1.value  + " , " + color2.value + "," + color3.value + ")";
 
-    gradBtn.style.background = "linear-gradient(to top, " + color2.value  + " , " + color1.value + ")";
+    gradBtn.style.background = "linear-gradient(to top, " + color2.value  + " , " + color1.value + "," +  color3.value + ")";
     css.textContent = body.style.background + ";";
 }
 
@@ -27,9 +28,11 @@ const generateRandomColors = () => {
 
     let firstColor = getRandomColor();
     let secondColor = getRandomColor();
+    let thirdColor = getRandomColor();
 
     color1.value = firstColor;
     color2.value = secondColor;
+    color3.value = thirdColor;
 
     changeBackground();
 }
